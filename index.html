@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="css/master.css">
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <h1>Basic-Calculator</h1>
+    <form name="calculator" action="index.html" method="post">
+      <input type="text" name="screen" value="">
+      <input type="reset" name="reset" value="C">
+      <br>
+      <input type="button" name="siete" value="7" onclick=insert(7)>
+      <input type="button" name="ocho" value="8" onclick=insert(8)>
+      <input type="button" name="nueve" value="9" onclick=insert(9)>
+      <input type="button" name="dividir" value="/" onclick=operator("/")>
+      <br>
+      <input type="button" name="cuatro" value="4" onclick=insert(4)>
+      <input type="button" name="cinco" value="5" onclick=insert(5)>
+      <input type="button" name="seis" value="6" onclick=insert(6)>
+      <input type="button" name="multiplicar" value="*" onclick=operator("*")>
+      <br>
+      <input type="button" name="uno" value="1" onclick=insert(1)>
+      <input type="button" name="dos" value="2" onclick=insert(2)>
+      <input type="button" name="tres" value="3" onclick=insert(3)>
+      <input type="button" name="resta" value="-" onclick=operator("-")>
+      <br>
+      <input type="button" name="cero" value="0" onclick=insert(0)>
+      <input type="button" name="punto" value="." onclick=insert(".")>
+      <input type="button" name="igual" value="=" onclick=result()>
+      <input type="button" name="suma" value="+" onclick=operator("+")>
+    </form>
+
+  </body>
+</html>
