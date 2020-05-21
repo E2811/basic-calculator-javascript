@@ -1,19 +1,22 @@
 let operation ="";
+let screen = document.calculator.screen;
+
 
 function insert(num){
-  display = document.calculator.screen.value+num;
-  document.calculator.screen.value = display;
+  display = screen.value+num;
+  screen.value = display;
+  console.log(screen.value)
 }
 
 function operator(eq){
-  operation += document.calculator.screen.value + eq;
-  document.calculator.screen.value = "";
+  operation += screen.value + eq;
+  screen.value = "";
 }
 
 function result(){
-  operation +=document.calculator.screen.value;
+  operation +=screen.value;
   if (operation){
-    document.calculator.screen.value = eval(operation);
+    screen.value = eval(operation);
   }
   operation ="";
 }
